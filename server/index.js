@@ -48,7 +48,6 @@ app.post('/webhook', async (req, res) => {
     let data, eventType;
   
     if (process.env.STRIPE_WEBHOOK_SECRET) {
-      /
       let event;
       let signature = req.headers['stripe-signature'];
       try {
